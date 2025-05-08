@@ -1,5 +1,8 @@
 package com.example.testapp;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public class AccountItem {
 
     public enum StatusEnum {
@@ -15,6 +18,7 @@ public class AccountItem {
             this.value = value;
         }
 
+        @JsonValue
         public String getValue() {
             return value;
         }
@@ -24,6 +28,7 @@ public class AccountItem {
             return String.valueOf(value);
         }
 
+        @JsonCreator
         public static StatusEnum fromValue(String value) {
             for (StatusEnum b : StatusEnum.values()) {
                 if (b.value.equals(value))

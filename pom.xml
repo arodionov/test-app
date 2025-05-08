@@ -27,10 +27,9 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.openrewrite</groupId>
-            <artifactId>rewrite-java</artifactId>
-            <version>8.51.0</version>
-            <scope>runtime</scope>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.18.4</version>
         </dependency>
     </dependencies>
 
@@ -42,9 +41,16 @@
                 <version>6.7.0</version>
                 <configuration>
                     <activeRecipes>
-                        <recipe>org.openrewrite.java.format.AutoFormat</recipe>
+                        <recipe>org.openrewrite.java.RemoveUnusedImports</recipe>
                     </activeRecipes>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.openrewrite</groupId>
+                        <artifactId>rewrite-java</artifactId>
+                        <version>8.51.0</version>
+                    </dependency>
+                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
