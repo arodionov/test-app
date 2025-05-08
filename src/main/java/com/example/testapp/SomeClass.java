@@ -1,5 +1,7 @@
 package com.example.testapp;
 
+import com.example.testapp.AccountItem;
+
 public class SomeClass {
 
     static AccountItem.StatusEnum mapStatus(Account.Status status) {
