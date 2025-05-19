@@ -1,6 +1,6 @@
-package com.example.testapp;
+package item;
 
-import com.example.testapp.AccountItem;
+import gen.AccountItem;
 
 public class SomeClass {
 

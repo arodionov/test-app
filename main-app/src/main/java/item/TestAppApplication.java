@@ -1,4 +1,6 @@
-package com.example.testapp;
+package item;
+
+import gen.AccountItem;
 
 public class TestAppApplication {
 

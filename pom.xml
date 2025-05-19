@@ -5,6 +5,7 @@
     <groupId>com.example</groupId>
     <artifactId>test-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>test-app</name>
     <description>test-app</description>
     <url/>
@@ -14,6 +15,10 @@
     <developers>
         <developer/>
     </developers>
+    <modules>
+        <module>main-app</module>
+        <module>gen-app</module>
+    </modules>
     <scm>
         <connection/>
         <developerConnection/>
